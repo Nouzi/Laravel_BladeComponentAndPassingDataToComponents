@@ -4,6 +4,13 @@
     <li>Jedna</li>
     <li>Dva</li>
     <li>Tri</li>
+    <li>
+        {{ $messageData->title }}
+        <br>
+        {{ $messageData->currentCount }}
+        <br>
+        {{ $messageData->type }}
+    </li>
 </ul>
 
 </div>

@@ -11,9 +11,21 @@ class nameList extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    /*
+     * Create message variable
+     *
+     * @var string
+     *
+     * */
+    public $message;
+
+
+
+
+    public function __construct($message)
     {
-        //
+        $this->message = $message;
     }
 
     /**

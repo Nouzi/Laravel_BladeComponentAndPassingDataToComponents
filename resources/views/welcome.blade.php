@@ -12,8 +12,9 @@
 
     <h1 class="my-8 text-center text-5xl">Nadpis</h1>
 
-    <x-name-list>   </x-name-list>
-
+    @foreach($message as $messageData)
+    <x-name-list :message="$messageData">   </x-name-list>
+    @endforeach
 
     </body>
 </html>
