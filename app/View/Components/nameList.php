@@ -18,14 +18,14 @@ class nameList extends Component
      * @var string
      *
      * */
-    public $message;
+    public $messageData;
 
 
 
 
-    public function __construct($message)
+    public function __construct($messageData)
     {
-        $this->message = $message;
+        $this->messageData = $messageData;
     }
 
     /**

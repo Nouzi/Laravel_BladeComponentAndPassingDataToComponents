@@ -11,10 +11,12 @@
     <body class="bg-gray-600">
 
     <h1 class="my-8 text-center text-5xl">Nadpis</h1>
-
+    <div class="flex">
     @foreach($message as $messageData)
-    <x-name-list :message="$messageData">   </x-name-list>
-    @endforeach
 
+    <x-name-list :messageData="$messageData">   </x-name-list>
+
+    @endforeach
+    </div>
     </body>
 </html>

@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 
 class PassMessageData extends Controller
 {
+
     public function index()
     {
-        dd(Message::all());
-        return view('welcome', [ 'message' => Message::all() ]);
+        $message = Message::all();
+        return view('welcome', ['message' => $message] );
     }
+
 }

@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('welcome', ['message' => PassMessageData::class] );
+Route::get('/', [ PassMessageData::class, 'index'] );
